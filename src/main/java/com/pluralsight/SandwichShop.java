@@ -48,32 +48,32 @@ public class SandwichShop {
         //regular add 1.00
         //large add 1.75
 
-        System.out.print("if you would like a loaded sandwich enter the price of size of sandwich. Otherwise enter 0: ");
+
+        System.out.print("    if you would like a loaded sandwich enter the price of size of sandwich. Otherwise enter 6: ");
         float loadedSandwich = scanner.nextFloat();
 
 
-        if (loadedSandwich == 5.45) {
+        if (loadedSandwich < 5.45) {
             float price3;
             float addedCost = 1.00f;
             price3 = addedCost + loadedSandwich;
             System.out.print("price: " + price3);
-        }
-
-        if (loadedSandwich == 8.95) {
+        } else if (loadedSandwich > 7.00) {
             float price4;
             float largeAddedCost = 1.75f;
             price4 = largeAddedCost + loadedSandwich;
             System.out.print("price: " + price4);
-        }
-        if (loadedSandwich == 0) {
+
+            //double roundedPrice2 = Math.round(price4 * 100.0) / 100.0;
+            //System.out.print("price: " + roundedPrice2);
+        } else  {
             System.out.print("you do not want a loaded sandwich       " + "" +
                     "");
 
+
+            }
+
+
         }
-        //float price4;
-        //double roundedPrice2 = Math.round(price4 * 100.0) / 100.0;
-        //System.out.print("price: " + roundedPrice2);
-
-
     }
-}
+
