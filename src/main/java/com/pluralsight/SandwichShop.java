@@ -12,17 +12,22 @@ public class SandwichShop {
 //        c. Everyone else won't receive a discount
 //        Display the cost of the sandwich to the screen
 
-        boolean sandwichSize=
-        float basePrice=;
-        float regular= 5.45f;
-        float large=8.95f;
-
-        float sandwichSize= large * adolescentAge;
-        float sandwichSize= regular;
-
         System.out.print("Is the sandwich (1)large or (2)regular? Enter number: ");
         float sandwichSize=scanner.nextInt();
         scanner.nextLine();
+
+        float price = adolescentAge +sandwichSize;
+               float adolescentAge =.10f;
+
+        if (adolescentAge<17){
+            price= adolescentAge + sandwichSize;
+        } else {
+            price= elderlyAge * sandwichSize;
+
+        }
+        System.out.print(price);
+
+        +sandwichSize
 
 
         System.out.println("How old are you? :");
