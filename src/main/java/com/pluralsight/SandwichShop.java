@@ -42,7 +42,9 @@ public class SandwichShop {
             double roundedPrice = Math.round(price2 * 100.0) / 100.0;
             System.out.print("price: " + roundedPrice);
         }
-
+        else{
+            System.out.print("price: " + sandwichSize);
+        }
 
         //Exercise 2 Loaded Sandwich
         //regular add 1.00
