@@ -35,6 +35,20 @@ public class SandwichShop {
         if (age>=65) {
             price = (sandwichSize - (elderlyDiscount * sandwichSize));
 
+            //Exercise 2 Loaded Sandwich
+            //regular add 1.00
+            //large add 1.75
+            System.out.print("Would you like a loaded sandwich?: ");
+            String loadedSandwich = scanner.nextLine();
+
+            loadedSandwich= sandwichSize + addedCost;
+
+            if (loadedSandwich ==5.45){
+                price= sandwichSize+1.00
+            }
+            if (loadedSandwich ==8.95){
+                price= sandwichSize+1.75
+
 
             double roundedPrice2 = Math.round(price * 100.0) / 100.0;
             System.out.print("price: " + roundedPrice2);
