@@ -38,16 +38,25 @@ public class SandwichShop {
             //Exercise 2 Loaded Sandwich
             //regular add 1.00
             //large add 1.75
-            System.out.print("Would you like a loaded sandwich?: ");
-            String loadedSandwich = scanner.nextLine();
+            System.out.print("if you would like a loaded sandwich enter the price of size of sandwich: ");
+            float loadedSandwich = scanner.nextFloat();
 
-            loadedSandwich= sandwichSize + addedCost;
 
-            if (loadedSandwich ==5.45){
-                price= sandwichSize+1.00
+
+            float addedCost= 1.00f;
+            float largeAddedCost=1.75f;
+
+
+            if (loadedSandwich==5.45){
+                price= addedCost+loadedSandwich;
             }
-            if (loadedSandwich ==8.95){
-                price= sandwichSize+1.75
+
+            if (loadedSandwich==8.95){
+                price= largeAddedCost+loadedSandwich;
+            }else{
+
+            }
+
 
 
             double roundedPrice2 = Math.round(price * 100.0) / 100.0;
