@@ -29,7 +29,7 @@ public class SandwichShop {
             price= sandwichSize;
 
         }
-        System.out.print(price);
+        ////
 
         if (age>65){
             price= (sandwichSize - (elderlyDiscount * sandwichSize));
@@ -37,7 +37,10 @@ public class SandwichShop {
         }else{
             price= sandwichSize;
         }
-        System.out.print(price);
+
+
+        double roundedPrice= Math.round(price*100.0)/100.0;
+        System.out.print("price: " + roundedPrice);
 
 
 
