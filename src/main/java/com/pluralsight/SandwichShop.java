@@ -19,13 +19,12 @@ public class SandwichShop {
         System.out.println("Enter age:");
         int age =scanner.nextInt();
 
-
         float price;
         float elderlyDiscount =.2f;
                float adolescentDiscount =.10f;
 
         if (age<=17){
-            price= adolescentDiscount * sandwichSize;
+            price= (sandwichSize - (adolescentDiscount * sandwichSize));
         } else {
             price= sandwichSize;
 
@@ -33,7 +32,7 @@ public class SandwichShop {
         System.out.print(price);
 
         if (age>65){
-            price= elderlyDiscount * sandwichSize;
+            price= (sandwichSize - (elderlyDiscount * sandwichSize));
 
         }else{
             price= sandwichSize;
