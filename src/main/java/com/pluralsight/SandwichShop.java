@@ -37,7 +37,7 @@ public class SandwichShop {
 
 
             double roundedPrice2 = Math.round(price * 100.0) / 100.0;
-            System.out.print("price2: " + roundedPrice2);
+            System.out.print("price: " + roundedPrice2);
         }
 
 
