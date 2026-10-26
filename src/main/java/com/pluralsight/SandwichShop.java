@@ -14,11 +14,20 @@ public class SandwichShop {
 //        c. Everyone else won't receive a discount
 //        Display the cost of the sandwich to the screen
 
-        float price1;
+        double sandwichPrice= 8.95;
+        //float sandwichPrice=5.45f;
 
-        System.out.print("Enter price of large or regular sandwich: ");
-        float sandwichSize = scanner.nextFloat();
+        System.out.print("Enter size. (1)large or (2)regular sandwich: ");
+        int sandwichSize = scanner.nextInt();
         scanner.nextLine();
+
+        if (sandwichSize == 1) {
+            System.out.print("Your large sandwich price is $8.95");
+        }
+
+           if(sandwichSize>=2) {
+               System.out.println("Your regular sandwich price is $5.45");
+           }
 
         System.out.println("Enter age:");
         int age = scanner.nextInt();
@@ -28,7 +37,7 @@ public class SandwichShop {
         float adolescentDiscount = .10f;
 
         if (age <= 17) {
-            price1 = (sandwichSize - (adolescentDiscount * sandwichSize));
+            double price1 = (sandwichPrice - (adolescentDiscount * sandwichPrice));
 
 
             double roundedPrice = Math.round(price1 * 100.0) / 100.0;
